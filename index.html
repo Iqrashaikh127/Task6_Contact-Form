@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="form-wrapper">
+    <div class="form-header">
+      <h1>Contact Us</h1>
+      <p>
+        <i class="icon">📞</i> Have a question? We’re here to help! <i class="icon">💌</i>
+      </p>
+    </div>
+    <form id="contactForm" class="contact-form">
+      <div class="form-group">
+        <label for="name"><i class="icon">👤</i> Name</label>
+        <input type="text" id="name" placeholder="Enter your name" />
+        <span class="error" id="nameError"></span>
+      </div>
+      <div class="form-group">
+        <label for="email"><i class="icon">✉️</i> Email</label>
+        <input type="email" id="email" placeholder="Enter your email" />
+        <span class="error" id="emailError"></span>
+      </div>
+      <div class="form-group">
+        <label for="message"><i class="icon">📝</i> Message</label>
+        <textarea id="message" rows="4" placeholder="Write your message"></textarea>
+        <span class="error" id="messageError"></span>
+      </div>
+      <button type="submit" id="submitBtn">Send Message</button>
+      <p class="success" id="successMessage"></p>
+    </form>
+  </div>
+</body>
+</html>
